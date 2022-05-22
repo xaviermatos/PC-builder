@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Xavier Matos Budget Calculator (UI/UX Practice)</title>
-<!-- I got the Google jQuery CDN (Content Delivery Network) from w3Schools, the URL is here: https://www.w3schools.com/jquery/jquery_get_started.asp -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src = "script.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-</head>
-<h1 id = "banner">Gaming PC Builder</h1>    
-<nav>
-    <ul class="navigation">
-   <li class ="licenter"><a href="PCBuilder.html">Home page</a></li>
-    <li><a class = "active" href="budgetCalculator.html">Budget Calculator</a></li>
-    <li><a href="PCparts.html">PC parts</a></li>
-    <li><a href="prebuiltPC.html">Prebuilt gaming PC's</a></li>
-    </ul>
-    </nav>    
-<body>
-    <header>
-    <h1>Budget Calculator</h1>
-    </header>
-    <main>
-    <p>This calculator will help you budget how much to spend on a gaming PC.</p>
-    <div id ="budget">
-    <p>Type in your budget for a gaming PC below (Ex. 1000)</p>
-    <input type = "text" id = "money" placeholder="Type in budget here">
-    <p>Select how much you play video games</p>
-    <input type="radio" id="play1" name="cost" value="1">
-    <label for="age1">A little</label><br>
-    <input type="radio" id="play2" name="cost" value="2">
-    <label for="age2">A lot</label><br>
-    <div id = "btncontainer">
-    <button type="button" onclick="budgetCalculator()"> Calculate your ideal PC</button>
-    <p id = "response"></p>
-    </div>     
-    </div>
-    </main>
-    <footer>
-    <p class="footer_text">Created by: Xavier Matos</p>
-    </footer>
-</body>
+	<head>
+		<title>Xavier Matos Budget Calculator (UI/UX Practice)</title>
+		<!-- I got the Google jQuery CDN (Content Delivery Network) from w3Schools, the URL is here: https://www.w3schools.com/jquery/jquery_get_started.asp -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src = "script.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<h1 id = "banner">Gaming PC Builder</h1>
+	<nav>
+		<ul class="navigation">
+			<li class ="licenter"><a href="PCBuilder.html">Home page</a></li>
+			<li><a class = "active" href="budgetCalculator.html">Budget Calculator</a></li>
+			<li><a href="PCparts.html">PC parts</a></li>
+			<li><a href="prebuiltPC.html">Prebuilt gaming PC's</a></li>
+		</ul>
+	</nav>
+	<body>
+		<header>
+			<h1>Budget Calculator</h1>
+		</header>
+		<main>
+			<p>This calculator will help you budget how much to spend on a gaming PC.</p>
+			<div id ="budget">
+				<p>Type in your budget for a gaming PC below (Ex. 1000)</p>
+				<input type = "text" id = "money" placeholder="Type in budget here">
+				<p>Select how much you play video games</p>
+				<input type="radio" id="play1" name="cost" value="1">
+				<label for="age1">A little</label><br>
+				<input type="radio" id="play2" name="cost" value="2">
+				<label for="age2">A lot</label><br>
+				<div id = "btncontainer">
+					<button type="button" onclick="budgetCalculator()"> Calculate your ideal PC</button>
+					<p id = "response"></p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p class="footer_text">Created by: Xavier Matos</p>
+		</footer>
+	</body>
 </html>
